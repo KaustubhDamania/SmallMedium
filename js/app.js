@@ -51,7 +51,7 @@ function sendURL() {
     // let prefixURL = window.location.href.slice(0,slashIndex)
     // prefixURL = prefixURL.replace('5000','5001')
     // console.log(prefixURL);
-    let prefixURL = 'http://13.127.65.157:5001'
+    let prefixURL = 'https://13.127.65.157:5001'
     let postURL = prefixURL + '/crawl.json?spider_name=get_content&url='
     let articleURL = document.getElementById('url').value
     postURL += encodeURIComponent(articleURL)
