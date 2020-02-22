@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
     // let slashIndex = window.location.href.lastIndexOf('/')
     // let prefixURL = window.location.href.slice(0,slashIndex)
     // prefixURL = prefixURL.replace('5000','5001')
-    let prefixURL = 'http://13.127.65.157:5001'
+    let prefixURL = 'https://13.127.65.157:5001'
     let postURL = prefixURL + '/crawl.json?spider_name=get_content&url='
     postURL += encodeURIComponent(title)
     console.log('Final URL is', postURL);
