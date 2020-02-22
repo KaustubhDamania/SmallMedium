@@ -5,7 +5,6 @@
     "start_url": "/SmallMedium/",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/",
     "background_color": "#FFFFFA",
     "theme_color": "#FFFFFA",
     "share_target":
