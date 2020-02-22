@@ -1,0 +1,16 @@
+h1{
+    margin-bottom: 25px !important;
+    margin-top: 25px !important;
+}
+
+.container{
+    margin-bottom: 50px !important;
+}
+
+.headlogo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
