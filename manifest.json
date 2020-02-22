@@ -9,7 +9,7 @@
     "theme_color": "#FFFFFA",
     "share_target":
     {
-        "action": "/",
+        "action": "/SmallMedium/",
         "params": {
             "title": "title",
             "text": "text",
