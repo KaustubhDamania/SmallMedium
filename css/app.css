@@ -12,13 +12,14 @@ h1{
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width: 75%;
     /* align-content: center; */
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-@media (min-width: 480px) and (max-width:1024px) {
+@media (min-width: 1024px){
     .headlogo{
-        width: 75%;
+        width: auto;
     }
 }
