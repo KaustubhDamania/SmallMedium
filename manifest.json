@@ -2,7 +2,7 @@
     "name": "SmallMedium",
     "short_name": "SmallMedium",
     "lang": "en-US",
-    "start_url": "/",
+    "start_url": "/SmallMedium/",
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
