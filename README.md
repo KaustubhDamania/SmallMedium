@@ -11,7 +11,6 @@
 <br>
 
 </div>
-------------------------------------------
 
 ## Disclaimer
 - This app does not promote piracy or abusing the free limit for starred articles. Do consider buying the Membership if you read a lot.
