@@ -1,0 +1,6 @@
+flask
+requests
+cffi
+scrapyrt
+gunicorn
+bs4

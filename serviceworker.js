@@ -1,10 +1,6 @@
 // collection of all the static files which form the the shell of your app
 const staticAssets = [
-    './',
-    './assets/',
-    './icons/',
-    './js/',
-    './css/'
+    './static/'
 ];
 
 var mode; //used to keep a check whether we are online at this point of time or offline
