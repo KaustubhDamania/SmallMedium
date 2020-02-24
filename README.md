@@ -32,7 +32,7 @@
 
 ## Desktop view
 
-<div align="center"></div>
+<div align="center"><img src="assets/desktop.png"></img></div>
 
 ## Mobile view
 
