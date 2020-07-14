@@ -33,7 +33,7 @@ def home():
     text = text[-1]
     print(text)
     port = int(os.environ.get('PORT',5001))
-    prefixURL = 'http://13.127.65.157:5001' #post request url
+    prefixURL = 'http://54.196.8.61:5001' # post request url
     postURL = prefixURL + '/crawl.json?spider_name=get_content&url='
     text = get_original_url(text)
     postURL += requote_uri(text)
