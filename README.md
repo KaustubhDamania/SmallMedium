@@ -28,21 +28,34 @@
 
 ## Demo
 
-<div align="center"><img src="assets/demo.gif"></img></div>
+<div align="center">
+
+| `Using Share API`                                                | `Using PWA`                                                    
+| ----------------------------------------------------------- | ----------------------------------------------------------- |
+| <img src="assets/demo.gif"> | <img src="assets/demo2.gif">
+
+</div>
 
 ## Desktop view
 
 <div align="center"><img src="assets/desktop.png"></img></div>
 
-## Mobile view
-
-<div align="center"></div>
-
-### Future Add-Ons
+## Future Add-Ons
 
 - Dark mode
 - Show all viewed articles
 - Recommend articles based on viewed articles
+------------------------------------------
+
+## Note
+- The scraper is hosted on AWS.
+- To run the scraper, follow the steps below
+
+```
+pip install -r requirements.txt
+cd scraper
+scrapyrt -p <port-number>
+```
 
 ------------------------------------------
 
