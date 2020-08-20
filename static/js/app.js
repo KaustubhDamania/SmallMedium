@@ -10,10 +10,12 @@ window.onload = function() {
     }
 }
 
-let prefixURL = 'http://13.127.65.157:5001'
+let form = document.getElementById('form');
 
-let submit = document.getElementById('submit');
-function sendURL() {
+form.addEventListener('submit',sendURL);
+
+function sendURL(e) {
+    e.preventDefault();
     let postURL = '?text=' + document.getElementById('url').value
     window.location.href = postURL
 }
