@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+cache = {}
 
 # assign the values accordingly
 consumer_key = os.getenv('CONSUMER_KEY')
@@ -37,17 +38,25 @@ def get_original_url(url):
 
 @app.route('/', methods=['GET'])
 def home():
-    text = request.args.get('text')
-    if not text:
+    medium_url = request.args.get('text')
+    if not medium_url:
         return render_template('index.html')
-    text = text.split()
-    print(text)
-    text = text[-1]
-    print(text)
-    text = get_original_url(text)
-    tweet = api.update_status(text)
+    medium_url = medium_url.split()
+    print(medium_url)
+    medium_url = medium_url[-1]
+    print(medium_url)
+    if cache.get(medium_url):
+        return redirect(cache[medium_url], code=302)
+    full_medium_url = get_original_url(medium_url)
+    print('Before', cache)
+    if cache.get(full_medium_url):
+        return redirect(cache[full_medium_url], code=302)
+    tweet = api.update_status(full_medium_url)
     print(tweet.text)
     twitter_url = tweet.text
+    cache[full_medium_url] = twitter_url
+    cache[medium_url] = twitter_url
+    print('After',cache)
     return redirect(twitter_url, code=302)
 
 @app.route('/<path:path>')
