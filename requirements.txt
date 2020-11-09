@@ -4,3 +4,5 @@ cffi
 scrapyrt
 gunicorn
 bs4
+tweepy
+python-dotenv
