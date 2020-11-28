@@ -45,10 +45,10 @@ def home():
     print(medium_url)
     medium_url = medium_url[-1]
     print(medium_url)
+    print('Before', cache)
     if cache.get(medium_url):
         return redirect(cache[medium_url], code=302)
     full_medium_url = get_original_url(medium_url)
-    print('Before', cache)
     if cache.get(full_medium_url):
         return redirect(cache[full_medium_url], code=302)
     tweet = api.update_status(full_medium_url)
