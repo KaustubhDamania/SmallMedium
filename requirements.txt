@@ -6,3 +6,4 @@ gunicorn
 bs4
 tweepy
 python-dotenv
+psycopg2-binary
