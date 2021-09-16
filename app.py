@@ -1,9 +1,7 @@
-from flask import Flask, request, jsonify, render_template, url_for, send_from_directory, redirect, flash
-import json, requests
+from flask import Flask, request, render_template, send_from_directory, redirect, flash
+import requests
 import os
-import bs4
 from urllib.parse import urlsplit, urlunsplit
-from requests.utils import requote_uri
 import tweepy
 import psycopg2
 import re
@@ -120,4 +118,4 @@ def send_js(path):
     return send_from_directory('.', path)
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=False)
