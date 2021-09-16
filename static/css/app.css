@@ -14,7 +14,7 @@ h1{
     margin-left: auto;
     width: 75%;
     /* align-content: center; */
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -40,6 +40,26 @@ h1{
     flex-wrap: nowrap;
     justify-content: center;
     height: 100%;
+}
+
+.toast {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.toast-body {
+    background: #dc3545 !important;
+    color: white;
+}
+
+.toast-container {
+    position: relative;
+    min-height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: -50px;
 }
 
 @media (min-width: 1024px){

@@ -19,3 +19,5 @@ function sendURL(e) {
     let postURL = '?text=' + document.getElementById('url').value
     window.location.href = postURL
 }
+
+$('.toast').toast('show')
