@@ -6,6 +6,7 @@ import tweepy
 import psycopg2
 import re
 from dotenv import load_dotenv
+import sqlite3
 load_dotenv()
 
 app = Flask(__name__)
@@ -25,10 +26,10 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 # calling the api
-api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+api = tweepy.API(auth, wait_on_rate_limit=True)
 api.verify_credentials()
 
-# conn = psycopg2.connect(dbname='postgres', user='postgres', password='postgres')
+# conn = psycopg2.connect(dbname='tweetsdb', user='postgres', password='postgres')
 conn = psycopg2.connect(database_url, sslmode='require')
 
 cursor = conn.cursor()
